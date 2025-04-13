@@ -76,7 +76,7 @@ public class Main {
                             availableTime -= remaining / workSpeed;
                             System.out.println(worker.getName() + " completed task: " + task.getTitle());
                         } else {
-                            task.addProgress(remaining);
+                            task.addProgress(availableTime);
                             task.addWorkTime(effectiveWork);
                             System.out.println(worker.getName() + " worked " + availableTime + "h on " + task.getTitle());
                             break; // Worker ist für heute fertig
